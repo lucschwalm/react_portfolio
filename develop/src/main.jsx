@@ -1,5 +1,22 @@
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+import './scss/styles.scss';
+
+import App from './App.jsx';
+import About from './components/About';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <About />
+      }
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={router} />);
