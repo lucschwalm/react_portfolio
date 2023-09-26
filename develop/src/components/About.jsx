@@ -10,7 +10,7 @@ export default function About() {
             Phasellus sit amet bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam lacinia ullamcorper massa a commodo. Mauris erat tortor, molestie vel massa ut, vestibulum bibendum nisl. Cras nec ipsum ullamcorper, sagittis nulla ac, congue felis. Ut aliquet est quis facilisis feugiat. Maecenas laoreet nisi libero, nec ultricies magna lobortis in. Proin non urna augue. Duis laoreet, elit ut interdum consequat, nisi libero iaculis nibh, ac feugiat lorem libero at augue. Nunc elementum arcu tellus, lacinia vestibulum velit rutrum et. Vivamus sed enim a sem ornare bibendum non eget risus. Nulla ac tristique ipsum. Nulla in vulputate libero, at fermentum lacus. Cras malesuada metus sit amet efficitur cursus. Suspendisse blandit ex in dui pharetra luctus.
 
             Ut sed quam pretium, porta ante ut, bibendum velit. Ut convallis varius rutrum. Mauris laoreet, tortor nec ullamcorper venenatis, elit augue volutpat risus, at euismod ligula erat id quam. Vivamus in consectetur nisi, eu iaculis ligula. Nulla facilisi. Nunc quis dui in ante lobortis eleifend id sit amet erat. Sed tincidunt elementum augue. Suspendisse a massa magna. Morbi tortor magna, eleifend in tincidunt ac, feugiat eu augue. Phasellus vel eros id risus sollicitudin iaculis non imperdiet sapien. Pellentesque vitae volutpat elit. Curabitur vitae ligula in libero congue rhoncus eget eu libero. Sed tincidunt lectus ac placerat sagittis.
-            </p>
+            </p>  
         </div>
     );
 }

@@ -4,7 +4,9 @@ export default function Nav() {
     const currentPage = useLocation().pathname;
 
     return (
-        <ul className="nav d-flex flex-row-reverse py-3">
+        <div id="navbar" className="d-flex justify-content-between">
+            <h1 className="ms-3 mt-3">Luc Schwalm</h1>
+            <ul className="nav d-flex flex-row-reverse py-3">
             <li className="nav-item">
                 <Link to="/resume" className={currentPage === '/resume' ? "nav-link active" : "nav-link"}>Resume</Link>
             </li>
@@ -18,5 +20,6 @@ export default function Nav() {
                 <Link to="/" className={currentPage === '/' ? "nav-link active" : "nav-link"}>About</Link>
             </li>
         </ul>
+        </div>  
     );
 }

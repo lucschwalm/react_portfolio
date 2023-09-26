@@ -42,8 +42,24 @@ export default function Contact() {
         setEmail("");
     }
 
+    const handleMouseLeave = (e) => {
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
+
+        if (!inputValue) {   
+            if (inputType === "email") {
+                setEmailDisplay({display: "block"});
+            } else if (inputType === "name") {
+                setNameDisplay({display: "block"});
+            } else {
+                setMessageDisplay({display: "block"});
+            }
+        }
+    }
+
     return(
-        <div className="container">
+        <div className="container mt-2">
             <h1>Contact Me</h1>
             <form className="form" onSubmit={handleFormSubmit}>
                 <h5 className="text-warning" style={emailDisplay}>This field is required</h5>
@@ -53,9 +69,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     type="email"
                     placeholder="Email"
-                    onMouseLeave={() => {
-                        setEmailDisplay({display: "block"});
-                    }}
+                    onMouseLeave={handleMouseLeave}
                 />
                 <h5 className="text-warning" style={nameDisplay}>This field is required</h5>
                 <input 
@@ -63,9 +77,8 @@ export default function Contact() {
                     name="name"
                     onChange={handleInputChange}
                     type="name"
-                    placeholder="Name"onMouseLeave={() => {
-                        setNameDisplay({display: "block"});
-                    }}
+                    placeholder="Name"
+                    onMouseLeave={handleMouseLeave}
                 />
                 <h5 className="text-warning" style={messageDisplay}>This field is required</h5>
                 <textarea 
@@ -76,9 +89,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     type="message"
                     placeholder="Message"
-                    onMouseLeave={() => {
-                        setMessageDisplay({display: "block"});
-                    }}
+                    onMouseLeave={handleMouseLeave}
                 />
                 <button type="submit">Submit</button>
             </form>
