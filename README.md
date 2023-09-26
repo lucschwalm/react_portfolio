@@ -6,4 +6,5 @@ This is a version of my portfolio built using react. It still has several placeh
 
 # Links
 Deployed site: https://neon-profiterole-783c14.netlify.app/
-Github: https://github.com/lucschwalm/react_portfolio/main
+
+Github: https://github.com/lucschwalm/react_portfolio/
